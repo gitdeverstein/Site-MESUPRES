@@ -2427,3 +2427,8 @@ input, select, textarea {
 			}
 
 	}
+
+/* Custom consolidated scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
