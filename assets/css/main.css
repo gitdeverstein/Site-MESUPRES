@@ -2302,6 +2302,10 @@ input, select, textarea {
 
 	}
 
+html {
+	scroll-behavior: smooth;
+}
+
 /* Small */
 
 	@media screen and (max-width: 736px) {
