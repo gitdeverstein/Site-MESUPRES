@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,800");
 @import url("fontawesome-all.min.css");
 
@@ -2427,3 +2431,30 @@ input, select, textarea {
 			}
 
 	}
+/* Back to Top Floating Button & Mobile Touch Targets */
+#back-to-top {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	display: none;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background: #ed786a;
+	color: #ffffff !important;
+	border-radius: 50%;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+	z-index: 10000;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+	text-decoration: none !important;
+}
+#back-to-top:hover {
+	background-color: #252525;
+	transform: translateY(-3px);
+}
+#navPanel nav a {
+	padding: 0.75em 1em;
+	display: block;
+	min-height: 44px;
+}

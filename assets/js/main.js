@@ -64,4 +64,19 @@
 					visibleClass: 'navPanel-visible'
 				});
 
+
+		// Back to top button
+		var $btt = $('<a href="#" id="back-to-top" title="Retour en haut" class="icon solid fa-chevron-up"><span class="label">Retour en haut</span></a>').appendTo($body);
+		$btt.on('click', function(e) {
+			e.preventDefault();
+			$('html, body').animate({ scrollTop: 0 }, 400);
+		});
+		$window.on('scroll', function() {
+			if ($window.scrollTop() > 300) {
+				$btt.fadeIn(200);
+			} else {
+				$btt.fadeOut(200);
+			}
+		});
+
 })(jQuery);
